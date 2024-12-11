@@ -122,12 +122,11 @@
     } elseif ($argv[1] == "clear") { # Run if clear is passed
         # Clear files
         _clear_file(__DIR__."/config.hash", "config.hash");
-        _clear_file(__DIR__."/../../public/css/modStyles.css", "public/css/modStyles.css");
-        _clear_file(__DIR__."/../../public/js/modScripts.js","public/js/modScripts.js");
+        _clear_file(__DIR__."/../../public/uploads/ModBook/modStyles.css", "public/uploads/ModBook/modStyles.css");
+        _clear_file(__DIR__."/../../public/uploads/ModBook/modScripts.js", "public/uploads/ModBook/modScripts.js");
 
-        # Clear folders
-        _clear_folder(__DIR__."/../../public/css", "public/css");
-        _clear_folder(__DIR__."/../../public/js", "public/js");
+        # Clear folder
+        _clear_folder(__DIR__."/../../public/uploads/ModBook", "public/uploads/ModBook");
     } else {
         # Print that the passed argument is invalid
         _print("Invalid command.");

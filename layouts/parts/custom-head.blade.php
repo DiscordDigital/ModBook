@@ -48,21 +48,15 @@
 
     # Regenerate cache when required
     if ($regenerateCache === TRUE) {
-        # Check if public/css folder doesn't exist
-        if (!file_exists(getcwd() . "/css")) {
-            # Create public/css folder
-            mkdir(getcwd() . "/css");
-        }
-
-        # Check if public/js folder doesn't exist
-        if (!file_exists(getcwd() . "/js")) {
-            # Create public/js folder
-            mkdir(getcwd() . "/js");
+        # Check if public/uploads/ModBook folder doesn't exist
+        if (!file_exists(getcwd() . "/uploads/ModBook")) {
+            # Create public/uploads/ModBook folder
+            mkdir(getcwd() . "/uploads/ModBook");
         }
 
         # Path of public folder with modStyles.css & modScripts.js file
-        $modStylesPath = getcwd() . "/css/modStyles.css";
-        $modScriptsPath = getcwd() . "/js/modScripts.js";
+        $modStylesPath = getcwd() . "/uploads/ModBook/modStyles.css";
+        $modScriptsPath = getcwd() . "/uploads/ModBook/modScripts.js";
 
         # Delete config.hash if exist
         if (file_exists($mbDir."/config.hash")) {
@@ -125,14 +119,14 @@
     }
 
     # Only link modStyles.css if it exists in public folder
-    if (file_exists(getcwd() . "/css/modStyles.css")) {
+    if (file_exists(getcwd() . "/uploads/ModBook/modStyles.css")) {
         # Create link HTML pointing to modStyles.css
-        echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"/css/modStyles.css\"></style>"."\n";
+        echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"/uploads/ModBook/modStyles.css\"></style>"."\n";
     }
 
     # Only link modScripts.js if it exists in public folder
-    if (file_exists(getcwd() . "/js/modScripts.js")) {
+    if (file_exists(getcwd() . "/uploads/ModBook/modScripts.js")) {
         # Create script HTML pointing to modScripts.js
-        echo "    <script nonce=\"$cspNonce\" src=\"/js/modScripts.js\"></script>";
+        echo "    <script nonce=\"$cspNonce\" src=\"/uploads/ModBook/modScripts.js\"></script>";
     }
 ?>
