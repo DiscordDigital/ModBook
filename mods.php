@@ -6,5 +6,5 @@
     $coreMods = ["WaitFor"];
 
     # List of available mods, only load if enabled in config.php
-    $modList = ["FlatView", "HiddenLogin", "TopNav", "SquareSearch", "NoBgColorOnHover", "RoundCards", "BiggerIcons"];
+    $modList = ["FlatView", "HiddenLogin", "TopNav", "SquareSearch", "NoBgColorOnHover", "RoundCards", "BiggerIcons", "DarkestMode"];
 ?>
