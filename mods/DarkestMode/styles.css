@@ -19,3 +19,7 @@ html.dark-mode h6 {
 html.dark-mode body {
     color: #cfcfcf;
 }
+
+html.dark-mode div[drawio-diagram] {
+    background: white;
+}
