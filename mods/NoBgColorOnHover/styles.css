@@ -1,0 +1,8 @@
+.bg-bookshelf,
+.bg-book {
+    background-color: black;
+}
+
+.grid-card:hover .featured-image-container {
+    opacity: .7;
+}
