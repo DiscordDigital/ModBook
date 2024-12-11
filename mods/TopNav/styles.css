@@ -1,0 +1,46 @@
+#navhack {
+    display: flex;
+    flex-direction: row;
+}
+
+#navhack .body {
+    padding-block: 0px !important;
+}
+
+#navhack>nav {
+    width: 100%;
+    max-width: 50%;
+}
+
+@media (max-width: 1000px) {
+    #navhack {
+        flex-direction: column !important;
+    }
+
+    #navhack .body {
+        padding-block: 0px !important;
+    }
+
+    #navhack>nav {
+        max-width: inherit;
+    }
+}
+
+#navhack #book-tree .list-item-page,
+#navhack #book-tree .list-item-book {
+    font-size: 12px !important;
+    list-style: none !important;
+}
+
+#navhack .sidebar-page-nav {
+    font-weight: bold;
+}
+
+#navhack .list-item-page,
+#navhack .list-item-book {
+    margin-right: 24px;
+}
+
+#navhack .sidebar-page-nav-bullet {
+    background-color: var(--color-link) !important;
+}
