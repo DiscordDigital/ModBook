@@ -1,0 +1,20 @@
+#main-content .card:not(.dropdown-search-dropdown) {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+html {
+    background-color: #fefefe;
+}
+
+html.dark-mode {
+    background-color: unset;
+}
+
+.grid-card {
+    background: white;
+}
+
+html.dark-mode .grid-card {
+    background: unset;
+}
