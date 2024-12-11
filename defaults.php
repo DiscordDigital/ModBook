@@ -24,4 +24,7 @@
 
     # Makes icons and text bigger and removes the background circle.
     $BiggerIcons = FALSE;
+
+    # This changes the dark mode to use black as background, text is slightly brighter.
+    $DarkestMode = FALSE;
 ?>
