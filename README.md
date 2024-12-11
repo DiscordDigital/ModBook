@@ -80,7 +80,7 @@ APP_THEME=ModBook
 ### Step 2:
 Run following as your webserver user in the `themes/ModBook` directory:
 ```php
-php mb.php clear
+$ php mb.php clear
 ```
 This will remove changes made to the `public` directory.
 
