@@ -1,6 +1,4 @@
-#new .entity-list-item>span:first-child:after,
-#popular .entity-list-item>span:first-child:after,
-#recents .entity-list-item>span:first-child:after,
+.tri-layout-sides-content .entity-list-item>span:first-child:after,
 .actions .entity-list-item>span:first-child:after,
 .icon-list-item>span:first-child:after {
     background-color: unset;
