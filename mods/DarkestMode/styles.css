@@ -1,0 +1,21 @@
+html.dark-mode {
+    background-color: #000;
+}
+
+html.dark-mode .grid-card .grid-card-content,
+html.dark-mode .grid-card .grid-card-footer {
+    background-color: #111;
+}
+
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode h4,
+html.dark-mode h5,
+html.dark-mode h6 {
+    color: #dbdbdb;
+}
+
+html.dark-mode body {
+    color: #cfcfcf;
+}
