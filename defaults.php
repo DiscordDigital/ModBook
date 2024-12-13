@@ -28,6 +28,6 @@
     # This changes the dark mode to use black as background, text is slightly brighter.
     $DarkestMode = FALSE;
 
-    # Makes callouts look more like markdown alerts on GitHub.xxxxxxxxxxxxxxxxxxxxxxxxx
+    # Makes callouts look more like markdown alerts on GitHub.
     $SimplerCallouts = FALSE;
 ?>
