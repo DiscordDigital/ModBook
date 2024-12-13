@@ -1,0 +1,80 @@
+.callout.info,
+.callout.success,
+.callout.warning,
+.callout.danger {
+    background-color: transparent;
+    border-width: 4px;
+    color: #444;
+}
+
+html.dark-mode .callout.info,
+html.dark-mode .callout.success,
+html.dark-mode .callout.warning,
+html.dark-mode .callout.danger {
+    background-color: transparent;
+    color: #bbb;
+}
+
+.callout:before {
+    top: 13px;
+    display: block;
+    position: static;
+    margin-top: -12px;
+    padding-bottom: 4px;
+    font-size: 14px;
+    width: auto;
+    padding-top: 5px;
+    padding-left: 32px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    height: 15px;
+}
+
+.callout {
+    padding-inline-start: 16px;
+    padding-top: 18px;
+}
+
+.callout.info:before {
+    content: "Info";
+    color: #0288d1;
+}
+
+.callout.success:before {
+    content: "Success";
+    color: #0f7d15;
+}
+
+.callout.warning:before {
+    content: "Warning";
+    color: #cf4d03;
+}
+
+.callout.danger:before {
+    content: "Caution";
+    color: #4d0706;
+}
+
+html.dark-mode .callout.info:before {
+    content: "Info";
+    color: #0288d1;
+    opacity: 1;
+}
+
+html.dark-mode .callout.success:before {
+    content: "Success";
+    color: #4aa850;
+    opacity: 1;
+}
+
+html.dark-mode .callout.warning:before {
+    content: "Warning";
+    color: #de8a5a;
+    opacity: 1;
+}
+
+html.dark-mode .callout.danger:before {
+    content: "Caution";
+    color: #e85c5b;
+    opacity: 1;
+}
