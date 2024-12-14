@@ -5,7 +5,7 @@
 {!! $headContent->forWeb() !!}
 <!-- End: custom user content -->
 @endif
-<!-- Start: ModBook -->
+<!-- ModBook -->
 <?php
     # Directory of the ModBook folder
     $mbDir = realpath(getcwd()."/../themes/ModBook/");
