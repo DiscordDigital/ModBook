@@ -1,8 +1,9 @@
 <?php
     # CLI utility to manage ModBook
 
-    # Load user configuration to obtain status of mods
+    # Check if config.php file exists
     if (file_exists("config.php")) {
+        # Load user configuration to obtain status of mods
         include('config.php');
     } else {
         # Copy the defaults.php file to config.php
