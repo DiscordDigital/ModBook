@@ -2,14 +2,14 @@
 A modular BookStack theme
 
 ## 📚 Project Definition
-ModBook is a collection of smaller tweaks that I have created and put into a format, which can be dynamically loaded. This repository can be cloned into the themes folder, and enabled like any BookStack theme, using the .env file.
+ModBook is a collection of smaller mods that I have created and put into a format, which can be dynamically loaded. This repository can be cloned into the themes folder, and enabled like any BookStack theme, using the .env file.
 
 By default this theme won't change anything visually, however after first reload of BookStack, a config.php should be generated within the ModBook folder. This file can be used to enable various mods. The target of this project is to generate a JavaScript and CSS file dynamically, to achieve a very customized experience.
 
-Due to the fact that tweaks can be incompatible with each other; I have decided that this will still be called a modular theme, rather than a mod-loader of some sort.
+Due to the fact that mods can be incompatible with each other; I have decided that this will still be called a modular theme, rather than a mod-loader of some sort.
 
 ## 🎁 Contributing, Issues
-Feel free to create issues to point out incompatible code or issues with tweaks. I will still decide which tweaks make it into this repository, however: Feel free to fork this, and make your own modpack. If you decide to fork and redistribute it, please use another name than ModBook, so cloning into the themes folder won't cause complications.
+Feel free to create issues to point out incompatible code or issues with mods. I will still decide which mods make it into this repository, however: Feel free to fork this, and make your own modpack. If you decide to fork and redistribute it, please use another name than ModBook, so cloning into the themes folder won't cause complications.
 
 ## 🖥️ Get Started
 > You may have to use `sudo -u www-data` and replace www-data with your webserver user here.\
