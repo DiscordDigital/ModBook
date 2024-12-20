@@ -5,7 +5,7 @@
 {!! $headContent->forWeb() !!}
 <!-- End: custom user content -->
 @endif
-<!-- Start: ModBook -->
+<!-- ModBook -->
 <?php
     # Directory of the ModBook folder
     $mbDir = realpath(getcwd()."/../themes/ModBook/");
@@ -54,8 +54,9 @@
             mkdir(getcwd() . "/uploads/ModBook");
         }
 
-        # Path of public folder with modStyles.css & modScripts.js file
+        # Path of public folder with modStyles.css, modScripts.js and modStylesGlobal.css files
         $modStylesPath = getcwd() . "/uploads/ModBook/modStyles.css";
+        $modStylesGlobalPath = getcwd() . "/uploads/ModBook/modStylesGlobal.css";
         $modScriptsPath = getcwd() . "/uploads/ModBook/modScripts.js";
 
         # Delete config.hash if exist
@@ -63,9 +64,12 @@
             unlink($mbDir."/config.hash");
         }
 
-        # Delete modStyles.css and modScripts.js if exist
+        # Delete modStyles.css, modStylesGlobal.css and modScripts.js if exist
         if (file_exists($modStylesPath)) {
             unlink($modStylesPath);
+        }
+        if (file_exists($modStylesGlobalPath)) {
+            unlink($modStylesGlobalPath);
         }
         if (file_exists($modScriptsPath)) {
             unlink($modScriptsPath);
@@ -94,6 +98,8 @@
                 if ($$mod === TRUE) {
                     # Possible paths of styles.css and scripts.js in mod directory
                     $cssPath = $modsFolder . "/" . $mod . "/styles.css";
+                    $cssGlobalPath = $modsFolder . "/" . $mod . "/globalStyles.css";
+                    $globalOverrideFile = $modsFolder . "/" . $mod . "/.global";
                     $jsPath = $modsFolder . "/" . $mod . "/scripts.js";
 
                     # If styles.css exists, create or append into modStyles.css
@@ -103,6 +109,30 @@
 
                         # Load styles.css contents into modStyles.css
                         file_put_contents($modStylesPath, $cssData."\n\n", FILE_APPEND);
+                    }
+
+                    # If .global exists, use regular stylesheet for printStyles.css
+                    if (file_exists($globalOverrideFile)) {
+                        # Obtain styles.css contents
+                        $cssData = file_get_contents($cssPath);
+
+                        # Load styles.css contents into modStylesGlobal.css
+                        file_put_contents($modStylesGlobalPath, $cssData."\n\n", FILE_APPEND);
+                    }
+
+                    # If printStyles.css exists, create or append into modStylesGlobal.css
+                    if (file_exists($cssGlobalPath)) {
+                        # Obtain styles.css contents
+                        $cssData = file_get_contents($cssGlobalPath);
+
+                        # Load styles.css contents into modStylesGlobal.css
+                        file_put_contents($modStylesGlobalPath, $cssData."\n\n", FILE_APPEND);
+                    }
+
+                    # Checks if modStylesGlobal.css is missing
+                    if (!file_exists($modStylesGlobalPath)) {
+                        # Creates an empty modStylesGlobal.css file, because the coreMod TineMCEStyles requires it
+                        file_put_contents($modStylesGlobalPath, '');
                     }
 
                     # If scripts.js exists, create or append into modScripts.js
@@ -121,7 +151,7 @@
     # Only link modStyles.css if it exists in public folder
     if (file_exists(getcwd() . "/uploads/ModBook/modStyles.css")) {
         # Create link HTML pointing to modStyles.css
-        echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"/uploads/ModBook/modStyles.css\"></style>"."\n";
+        echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"/uploads/ModBook/modStyles.css\"></link>"."\n";
     }
 
     # Only link modScripts.js if it exists in public folder
