@@ -121,7 +121,7 @@
     # Only link modStyles.css if it exists in public folder
     if (file_exists(getcwd() . "/uploads/ModBook/modStyles.css")) {
         # Create link HTML pointing to modStyles.css
-        echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"/uploads/ModBook/modStyles.css\"></style>"."\n";
+        echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"/uploads/ModBook/modStyles.css\"></link>"."\n";
     }
 
     # Only link modScripts.js if it exists in public folder
