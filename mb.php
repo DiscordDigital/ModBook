@@ -124,8 +124,9 @@
         # Clear files
         _clear_file(__DIR__."/config.hash", "config.hash");
         _clear_file(__DIR__."/../../public/uploads/ModBook/modStyles.css", "public/uploads/ModBook/modStyles.css");
+        _clear_file(__DIR__."/../../public/uploads/ModBook/modStylesGlobal.css", "public/uploads/ModBook/modStylesGlobal.css");
         _clear_file(__DIR__."/../../public/uploads/ModBook/modScripts.js", "public/uploads/ModBook/modScripts.js");
-
+        
         # Clear folder
         _clear_folder(__DIR__."/../../public/uploads/ModBook", "public/uploads/ModBook");
     } else {
