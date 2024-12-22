@@ -73,7 +73,7 @@ window.addEventListener('editor-tinymce::setup', event => {
                     deleteRangeAtCursor(editor, text.length);
 
                     // Inserts the HTML containing the icon data
-                    editor.insertContent(iconData);
+                    editor.selection.setContent(iconData);
 
                     // Inserts a space after the icon
                     editor.insertContent(" ");
