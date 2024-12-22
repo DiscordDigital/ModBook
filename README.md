@@ -95,3 +95,8 @@ Although I have tested everything posted on here, I can't support repairing any 
 If you haven't already, please create regular backups of your instance and make sure you have a most recent one before installing ModBook.
 
 Everything you do, is at your own risk.
+
+## 📄 Note about mods in PDF exports
+I currently optimize the mods to work with the `weasyprint` export method.
+
+Here's a page that describes how to configure it: https://www.bookstackapp.com/docs/admin/pdf-rendering/.
