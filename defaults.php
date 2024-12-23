@@ -33,4 +33,7 @@
 
     # Adds (y), <3 and (wow) that will turn into icons, when typed into a page.
     $ComplimentIcons = FALSE;
+
+    # Makes button elements have a bold font.
+    $BoldButtons = FALSE;
 ?>
