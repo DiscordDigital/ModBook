@@ -18,3 +18,9 @@
 .icon-list-item {
     gap: 12px;
 }
+
+@media screen and (min-width: 1400px) {
+    .tri-layout-left-contents, .tri-layout-right-contents {
+        height: calc(100% + 40px);
+    }
+}
