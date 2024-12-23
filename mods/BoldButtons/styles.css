@@ -1,0 +1,8 @@
+.actions.mb-xl span,
+.activity-list,
+a.entity-chip,
+.tri-layout-left-contents h4,
+.active-link-list,
+.breadcrumbs a {
+    font-weight: 500;
+}
