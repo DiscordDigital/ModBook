@@ -11,7 +11,16 @@
     $mbDir = realpath(getcwd()."/../themes/ModBook/");
 
     # User configuration file location
-    $modsConfig = $mbDir."/config.php";
+    $modsConfig = realpath($mbDir."/config.php");
+
+    # Check if user configuration file is missing
+    if ($modsConfig === FALSE) {
+        # Copy the defaults.php file to config.php
+        if (copy($mbDir."/defaults.php", $mbDir."/config.php")) {
+            # Reset $modsConfig, because it was set to FALSE previously
+            $modsConfig = realpath($mbDir."/config.php");
+        }
+    }
 
     # Default state for OpenGraph
     $OpenGraph = FALSE;
@@ -38,15 +47,6 @@
 
     # Mods repository file
     $modsSource = realpath($mbDir."/mods.php");
-
-    # Check if user configuration file is missing
-    if ($modsConfig === FALSE) {
-        # Copy the defaults.php file to config.php
-        if (copy($mbDir."/defaults.php", $mbDir."/config.php")) {
-            # Reset $modsConfig, because it was set to FALSE previously
-            $modsConfig = realpath($mbDir."/config.php");
-        }
-    }
 
     # Check if config.hash exists
     if (file_exists($mbDir."/config.hash")) {
