@@ -7,6 +7,7 @@ window.addEventListener('editor-tinymce::setup', event => {
     editor.on('init', function() {
         // Create new link element
         const cssLink = document.createElement("link");
+
         // Add attributes
         cssLink.setAttribute("rel", "stylesheet");
         cssLink.setAttribute("type", "text/css");
