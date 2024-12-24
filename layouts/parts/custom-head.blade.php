@@ -10,11 +10,31 @@
     # Directory of the ModBook folder
     $mbDir = realpath(getcwd()."/../themes/ModBook/");
 
+    # User configuration file location
+    $modsConfig = $mbDir."/config.php";
+
+    # Default state for OpenGraph
+    $OpenGraph = FALSE;
+
+    # Checks if user configuration file exists
+    if (file_exists($modsConfig)) {
+        # Load user configuration to dynamically check which mods are enabled
+        include($modsConfig);
+    }
+?>
+@isset($book, $page)
+@if($OpenGraph)
+@if($book->cover)
+    <meta property="og:description" content="{{ Str::limit($page->text, 100, '...') }}">
+    <meta property="og:image" content="{{ $book->getBookCover() }}">
+@else
+    <meta property="og:description" content="{{ Str::limit($page->text, 100, '...') }}">
+@endif
+@endif
+@endisset
+<?php
     # Folder containing the mods
     $modsFolder = realpath($mbDir."/mods");
-
-    # User configuration file location
-    $modsConfig = realpath($mbDir."/config.php");
 
     # Mods repository file
     $modsSource = realpath($mbDir."/mods.php");
@@ -80,9 +100,6 @@
 
         # Load mods repository to access $modList and $coreMods
         include($modsSource);
-
-        # Load user configuration to dynamically check which mods are enabled
-        include($modsConfig);
 
         # Enable coreMods by default, and prepend them to the modList
         foreach ($coreMods as &$mod) {

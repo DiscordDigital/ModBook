@@ -36,4 +36,7 @@
 
     # Makes button elements have a bold font.
     $BoldButtons = FALSE;
+
+    # Adds OpenGraph meta to the head, containing cover image and text.
+    $OpenGraph = FALSE;
 ?>
