@@ -39,4 +39,7 @@
 
     # Adds OpenGraph meta to the head, containing cover image and text.
     $OpenGraph = FALSE;
+
+    # Makes the sidebars always full opacity.
+    $FullOpacity = FALSE;
 ?>
