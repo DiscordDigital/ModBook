@@ -1,7 +1,15 @@
 @media screen and (min-width: 1000px) {
-    .tri-layout-left-contents>*, .tri-layout-right-contents>* {
+    .tri-layout-left-contents>*,
+    .tri-layout-right-contents>* {
         opacity: 1;
         transition: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    html.dark-mode .tri-layout-left-contents>*,
+    html.dark-mode .tri-layout-right-contents>* {
+        opacity: 1;
     }
 }
 
