@@ -4,3 +4,7 @@
         transition: none;
     }
 }
+
+.breadcrumbs {
+    opacity: 1;
+}
