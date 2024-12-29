@@ -42,4 +42,7 @@
 
     # Makes the sidebars always full opacity.
     $FullOpacity = FALSE;
+
+    # Replaces Shelves, Books, Chapters with Categories, Topics and Sections (english only).
+    $CategoriesAndTopics = FALSE;
 ?>
