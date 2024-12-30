@@ -1,0 +1,27 @@
+@media screen and (max-width: 1000px) {
+    .mobileNavSearch {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 14px);
+    }
+
+    .mobileNavSearchWithLogo {
+        transform: translate(-50%, 17px);
+    }
+
+    .logo-text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .mobileNavSearch #header-search-box-input {
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .mobileNavSearch #header-search-box-input {
+        width: 200px;
+    }
+}
