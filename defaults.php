@@ -45,4 +45,7 @@
 
     # Replaces Shelves, Books, Chapters with Categories, Topics and Sections (english only).
     $CategoriesAndTopics = FALSE;
+
+    # Adds a search bar to smaller screen widths.
+    $MobileSearchBar = FALSE;
 ?>
