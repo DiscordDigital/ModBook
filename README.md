@@ -17,13 +17,13 @@ Feel free to create issues to point out incompatible code or issues with mods. I
 ### Step 1:
 First, log-in to your server, then navigate to your BookStack installations theme folder:
 ```bash
-$ cd /var/www/bookstack/themes/
+cd /var/www/bookstack/themes/
 ```
 
 ### Step 2:
 Then run following to clone ModBook into your themes folder:
 ```bash
-$ git clone https://github.com/DiscordDigital/ModBook.git --branch release --single-branch
+git clone https://github.com/DiscordDigital/ModBook.git --branch release --single-branch
 ```
 
 ### Step 3:
@@ -41,11 +41,11 @@ Reload your page to create the config.php file within the `themes/ModBook` folde
 ## 📦 Updating ModBook
 Navigate to your ModBook folder:
 ```bash
-$ cd /var/www/bookstack/themes/ModBook/
+cd /var/www/bookstack/themes/ModBook/
 ```
 Then run following command as your webserver user, to update ModBook:
 ```bash
-$ git pull origin release
+git pull origin release
 ```
 
 Compare your `config.php` with `defaults.php` and migrate over mods of your interest.
@@ -57,17 +57,17 @@ With mb.php you can show the status of the mods available. You can also clear th
 
 Showing available commands:
 ```bash
-$ php mb.php
+php mb.php
 ```
 
 View a status of the available mods:
 ```bash
-$ php mb.php lsmod
+php mb.php lsmod
 ```
 
 Clear cache:
 ```bash
-$ php mb.php clear
+php mb.php clear
 ```
 
 ## ❌ Uninstalling
@@ -79,8 +79,8 @@ APP_THEME=ModBook
 
 ### Step 2:
 Run following as your webserver user in the `themes/ModBook` directory:
-```php
-$ php mb.php clear
+```bash
+php mb.php clear
 ```
 This will remove changes made to the `public` directory.
 
