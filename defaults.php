@@ -48,4 +48,7 @@
 
     # Adds a search bar to smaller screen widths.
     $MobileSearchBar = FALSE;
+
+    # Hides UI sections that contain no items.
+    $HideEmptySections = FALSE;
 ?>
