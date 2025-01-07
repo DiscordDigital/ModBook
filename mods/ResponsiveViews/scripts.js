@@ -24,3 +24,6 @@ window.addEventListener("resize", debounce(() => {
         }
     }
 }, 20));
+
+// Call the resize event on page load, to apply current screen width
+window.dispatchEvent(new Event('resize'));
