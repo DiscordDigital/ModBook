@@ -1,5 +1,3 @@
-@media only screen and (max-width: 1024px) {
-    button[name="view"] {
-        display: none;
-    }
+button[name="view"] {
+    display: none;
 }
