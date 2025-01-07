@@ -3,8 +3,8 @@
     # Enable or disable mods in config.php
     
     # Core mods load by default and don't need to be enabled
-    $coreMods = ["WaitFor", "TinyMCEStyles"];
+    $coreMods = ["WaitFor", "TinyMCEStyles", "Debounce"];
 
     # List of available mods, only load if enabled in config.php
-    $modList = ["FlatView", "HiddenLogin", "TopNav", "SquareSearch", "NoBgColorOnHover", "RoundCards", "BiggerIcons", "DarkestMode", "SimplerCallouts", "ComplimentIcons", "BoldButtons", "FullOpacity", "MobileSearchBar", "HideEmptySections"];
+    $modList = ["FlatView", "HiddenLogin", "TopNav", "SquareSearch", "NoBgColorOnHover", "RoundCards", "BiggerIcons", "DarkestMode", "SimplerCallouts", "ComplimentIcons", "BoldButtons", "FullOpacity", "MobileSearchBar", "HideEmptySections", "ResponsiveViews"];
 ?>

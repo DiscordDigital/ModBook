@@ -51,4 +51,7 @@
 
     # Hides UI sections that contain no items.
     $HideEmptySections = FALSE;
+
+    # This makes BookStack switch between list and grid view, based on screen width.
+    $ResponsiveViews = FALSE;
 ?>
