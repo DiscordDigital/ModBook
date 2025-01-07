@@ -1,1 +1,1 @@
-This mod makes BookStack switch between list and grid view, based on screen width.
+This makes BookStack switch between list and grid view, based on screen width.
