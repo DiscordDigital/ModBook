@@ -33,9 +33,9 @@
 ?>
 @isset($book, $page)
 @if($OpenGraph)
-@if($book->cover)
+@if($book->coverInfo()->exists())
     <meta property="og:description" content="{{ Str::limit($page->text, 100, '...') }}">
-    <meta property="og:image" content="{{ $book->getBookCover() }}">
+    <meta property="og:image" content="{{ $book->coverInfo()->getUrl() }}">
 @else
     <meta property="og:description" content="{{ Str::limit($page->text, 100, '...') }}">
 @endif
