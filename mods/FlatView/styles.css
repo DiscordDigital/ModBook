@@ -11,6 +11,10 @@ html {
     background: white;
 }
 
+.scroll-away-from-bottom::after {
+    background: none;
+}
+
 html.dark-mode .grid-card {
     background: unset;
 }
