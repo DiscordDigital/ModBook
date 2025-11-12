@@ -11,7 +11,7 @@ html {
     background: white;
 }
 
-.scroll-away-from-bottom::after {
+.scroll-away-from-bottom::after, .scroll-away-from-top::before {
     background: none;
 }
 
