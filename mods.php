@@ -6,5 +6,5 @@
     $coreMods = ["WaitFor", "TinyMCEStyles", "Debounce"];
 
     # List of available mods, only load if enabled in config.php
-    $modList = ["FlatView", "HiddenLogin", "TopNav", "SquareSearch", "NoBgColorOnHover", "RoundCards", "BiggerIcons", "DarkestMode", "SimplerCallouts", "ComplimentIcons", "BoldButtons", "FullOpacity", "MobileSearchBar", "HideEmptySections", "ResponsiveViews"];
+    $modList = ["FlatView", "HiddenLogin", "TopNav", "SquareSearch", "NoBgColorOnHover", "RoundCards", "BiggerIcons", "DarkestMode", "SimplerCallouts", "ComplimentIcons", "BoldButtons", "FullOpacity", "MobileSearchBar", "HideEmptySections", "ResponsiveViews", "LargerContent"];
 ?>
