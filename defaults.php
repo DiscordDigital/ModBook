@@ -54,4 +54,8 @@
 
     # This makes BookStack switch between list and grid view, based on screen width.
     $ResponsiveViews = FALSE;
+
+    # Increases the font of the page content
+    $LargerContent = FALSE;
+
 ?>
